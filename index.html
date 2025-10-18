@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Maragoli People | By Ian Kasudi</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f7f6f2;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .slides {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      animation: slide 15s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      opacity: 0;
+      animation: fade 15s infinite;
+    }
+    .slides img:nth-child(1) { animation-delay: 0s; }
+    .slides img:nth-child(2) { animation-delay: 5s; }
+    .slides img:nth-child(3) { animation-delay: 10s; }
+    @keyframes fade {
+      0%, 100% { opacity: 0; }
+      10%, 30% { opacity: 1; }
+    }
+    .intro-text {
+      position: absolute;
+      bottom: 20%;
+      left: 10%;
+      color: white;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+      font-size: 2em;
+      font-weight: bold;
+      animation: fadeIn 3s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #3a2e1f;
+      margin-bottom: 10px;
+    }
+    audio {
+      display: block;
+      margin: 10px auto;
+    }
+    footer {
+      background: #3a2e1f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="slides">
+    <img src="assets/slide1.jpg" alt="Maragoli Culture">
+    <img src="assets/slide2.jpg" alt="Maragoli People">
+    <img src="assets/slide3.jpg" alt="Vihiga Landscape">
+  </div>
+  <div class="intro-text">
+    The Maragoli People<br>
+    <small>Culture • History • Unity — Presented by Ian Kasudi</small>
+  </div>
+  <audio autoplay loop>
+    <source src="assets/traditional-loop.mp3" type="audio/mp3">
+  </audio>
+</header>
+
+<section id="about">
+  <h2>About the Maragoli People</h2>
+  <p>
+    The Maragoli (also known as Logoli or Avalogooli) are one of the main sub-groups of the Luhya community of Western Kenya.
+    They are known for their deep cultural values, agricultural traditions, and strong sense of unity. The Maragoli celebrate their heritage through dances, songs, and storytelling that have been passed down for generations.
+  </p>
+</section>
+
+<section id="subtribes">
+  <h2>Maragoli Sub-Tribes</h2>
+  <p>
+    The Maragoli community is made up of several clans and sub-tribes, each with its unique roots and identity.
+  </p>
+  <ul>
+    <li><b>Abasita</b> – Found mainly in Chavakali area.</li>
+    <li><b>Abamahalia</b> – Known for their craftsmanship and located near Majengo.</li>
+    <li><b>Abamavi</b> – Primarily farmers and cattle herders.</li>
+    <li><b>Abasiekwe</b> – Dwellers near Lugaga Hills.</li>
+    <li><b>Abasiru</b> – Spread across Mbale and Gisambai.</li>
+    <li><b>Abamasingila</b> – Also called Vamasingila, believed to have origins near Tiriki border, known for unity and community work.</li>
+    <li><b>Abasaniaga</b> – Early settlers near Kegondi region.</li>
+    <li><b>Abawaya</b> – Found in Mungoma and Kaimosi areas.</li>
+    <li><b>Abamulembo</b> – Reside in the central Maragoli region.</li>
+  </ul>
+</section>
+
+<section id="music">
+  <h2>Traditional Maragoli Music</h2>
+  <p>Enjoy traditional songs and litungu rhythms from the Maragoli heritage.</p>
+  <audio controls>
+    <source src="assets/song1.mp3" type="audio/mp3">
+  </audio>
+  <audio controls>
+    <source src="assets/song2.mp3" type="audio/mp3">
+  </audio>
+  <audio controls>
+    <source src="assets/song3.mp3" type="audio/mp3">
+  </audio>
+</section>
+
+<footer>
+  <p>Created by <b>Ian Kasudi</b> | Contact: <b>0706472022</b></p>
+  <p>&copy; 2025 The Maragoli People Heritage Project</p>
+</footer>
+
+</body>
+</html>
